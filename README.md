@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SENSE-AI 🚀  
+**AI-Powered Career Coaching & Resume Builder Platform**
 
-## Getting Started
+SENSE-AI is an intelligent platform designed to democratize career development.  
+It helps students and professionals with **resume optimization, interview preparation, skill-gap analysis, and real-time career recommendations** — all powered by AI.  
 
-First, run the development server:
+---
 
+## 🌟 Features
+- 📝 **AI Resume Builder** – Generate, optimize, and format professional resumes.  
+- 🤖 **Interview Preparation** – Mock interviews, feedback, and personalized questions.  
+- 📊 **Skill-Gap Analysis** – Identify missing skills and suggest learning paths.  
+- 🔮 **Career Recommendations** – AI-driven suggestions for jobs and roles.  
+- 🔐 **Authentication** – Secure login and user sessions with Clerk.  
+- ☁️ **Cloud Deployment** – Hosted on Vercel for scalability and speed.  
+
+---
+
+## 🛠️ Tech Stack
+- **Frontend:** React 19, Next.js 15, Tailwind CSS, ShadCN UI  
+- **Backend:** Next.js API Routes, Gemini AI (Google)  
+- **Database:** NeonDB with Prisma ORM  
+- **Authentication:** Clerk  
+- **Deployment:** Vercel  
+
+---
+
+## ⚙️ Getting Started
+
+### 1. Clone the Repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/your-username/sense-ai.git
+cd sense-ai
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install Dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 3. Setup Environment Variables  
+Create a `.env.local` file in the root and add:  
+```
+DATABASE_URL=your_neondb_url
+NEXT_PUBLIC_CLERK_FRONTEND_API=your_clerk_api
+CLERK_SECRET_KEY=your_clerk_secret
+GEMINI_API_KEY=your_gemini_api_key
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 4. Run the Development Server
+```bash
+npm run dev
+```
+Now open [http://localhost:3000](http://localhost:3000) 🎉
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📂 Project Structure
+```
+sense-ai/
+│── app/               # Next.js App Router
+│── components/        # UI Components
+│── lib/               # Utilities & Helpers
+│── prisma/            # Prisma Schema
+│── public/            # Static Assets
+│── styles/            # Global Styles
+│── package.json
+│── README.md
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🤝 Contributing
+1. Fork the project  
+2. Create a new branch (`feature/your-feature`)  
+3. Commit your changes (`git commit -m "Add feature"`)  
+4. Push to the branch  
+5. Open a Pull Request  
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📜 License
+This project is licensed under the **MIT License**.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 💡 Vision
+SENSE-AI’s goal is to make **career growth accessible, affordable, and intelligent** for everyone worldwide.  
